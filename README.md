@@ -1,2 +1,2 @@
 # powerLogWrap
-Android log parser for power
+log parser for power
