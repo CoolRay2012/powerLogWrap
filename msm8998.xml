@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logWrap>
+    <kernel>
+        <suspend_entry>PM: suspend entry (.+)</suspend_entry>
+        <suspend_exit>PM: suspend exit (.+)</suspend_exit>
+        <wakeup_source count=1>Resume caused by IRQ (.+)</wakeup_source>
+        <active_wakeup_source count=1>active wakeup source: (.+)</active_wakeup_source>
+        <device_suspend_fail count=1>PM: Device (.+) failed to suspend: (.+)</device_suspend_fail>
+    </kernel>
+    <bugreport>
+        <stat_since>Statistics since last charge</stat_since>
+        <estimated_power top=10>Estimated power use \(mAh\):</estimated_power>
+        <kernel_wakelock top=10>All kernel wake locks:</kernel_wakelock>
+        <partial_wakelock top=10>All partial wake locks:</partial_wakelock>
+        <wakeup_reason top=5>All wakeup reasons:</wakeup_reason>
+        <dumpsys_cpuinfo top=10>------ DUMPSYS CPUINFO</dumpsys_cpuinfo>
+        <cpu_top top=10>------ CPU INFO</cpu_top>
+        <top_alarm>Top Alarms</top_alarm>
+        <alarm_stats>Alarm Stats:</alarm_stats>
+    </bugreport>
+</logWrap>
